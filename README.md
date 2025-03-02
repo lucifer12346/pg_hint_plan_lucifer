@@ -1,3 +1,10 @@
+# pg\_hint\_plan\_lucifer
+A refinement of pg_hint_plan 1.6
+Utilized for implementation in LLMQopt.
+
+We refine pg_hint_plan.c and core.c to support a quick search for a complete plan with scan hints, join hints and a leading hint.
+
+
 # pg\_hint\_plan 1.6
 
 `pg_hint_plan` makes it possible to tweak PostgreSQL execution plans using
@@ -26,4 +33,3 @@ For more details, please see the various documentations available in the
 * * * * *
 
 Copyright (c) 2012-2023, NIPPON TELEGRAPH AND TELEPHONE CORPORATION
-# pg_hint_plan_lucifer
