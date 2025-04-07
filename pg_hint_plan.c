@@ -4763,7 +4763,7 @@ add_paths_to_joinrel_wrapper(PlannerInfo *root,
 			if (bms_equal(join_hint->inner_joinrelids, temp)){
 				set_join_config_options(join_hint->enforce_mask, false,
 										current_hint_state->context);}
-			else if(complete_hint == 1){//modification to accelerate plan searching  when the hint is complete -- lucifer
+			else if(complete_hints == 1){//modification to accelerate plan searching  when the hint is complete -- lucifer
 				return;
 			}
 			else{
